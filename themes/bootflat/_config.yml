@@ -1,0 +1,26 @@
+# Header
+menu:
+  Home: /
+  Archives: /archives
+rss:
+
+# Content
+excerpt_link: view more
+fancybox: false
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# Miscellaneous
+google_analytics: UA-59804519-1
+favicon: /favicon.ico
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:

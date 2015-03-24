@@ -1,0 +1,23 @@
+<% if (post.prev || post.next){ %>
+<ul class="pager">
+  <% if (post.prev){ %>
+    <li class="previous">
+      <a href="<%- url_for(post.prev.path) %>">
+        <strong>上一篇：</strong>
+        <% if (post.prev.title){ %>
+          <%= post.prev.title %>
+        <% } else { %>
+          (no title)
+        <% } %>
+      </a>
+    </li>
+  <% } %>
+  <% if (post.next){ %>
+    <li class="next">
+      <a href="<%- url_for(post.next.path) %>">
+        <strong>下一篇：</strong><%= post.next.title %>
+      </a>
+    </li>
+  <% } %>
+</ul>
+<% } %>

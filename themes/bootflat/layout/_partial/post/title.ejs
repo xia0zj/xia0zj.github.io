@@ -1,0 +1,15 @@
+<% if (post.link){ %>
+  <h1 class="<%= title_class %>">
+    <a class="<%= link_class %>" href="<%- url_for(post.link) %>" target="_blank"><%= post.title %></a>
+  </h1>
+<% } else if (post.title){ %>
+  <% if (index){ %>
+    <h1 class="<%= title_class %>">
+      <a class="<%= link_class %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    </h1>
+  <% } else { %>
+    <h1 class="<%= title_class %>">
+      <%= post.title %>
+    </h1>
+  <% } %>
+<% } %>
