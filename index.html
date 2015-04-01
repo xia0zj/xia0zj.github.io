@@ -57,6 +57,53 @@
       
   
     <h1 class="article-title text-center">
+      <a class="" href="/the-best-way-to-install-nodejs/">优雅的安装和使用NodeJS</a>
+    </h1>
+  
+
+
+    
+    <div class="well well-sm text-center">
+        <span class="btn btn-xs btn-default">2015/04/01
+</span>
+        
+  <a class="btn btn-xs btn-primary tag-link" href="/tags/nodejs/">nodejs</a>, <a class="btn btn-xs btn-primary tag-link" href="/tags/npm/">npm</a>, <a class="btn btn-xs btn-primary tag-link" href="/tags/技术学习/">技术学习</a>
+
+
+        
+    </div>
+    
+    <div class="article-body">
+      
+        <p>最近被osx环境下的npm各种折磨，执行npm install时各种报错，总结下来主要有两个原因：</p>
+<ul>
+<li>osx的权限问题</li>
+<li>天朝的网络问题，大家都懂的</li>
+</ul>
+<h2 id="常见安装">常见安装</h2><p>安装nodejs最常规的方式无疑就是从<code>https://nodejs.org/download/</code>下载安装包了，windows下这种方式很好用，方便得很，但osx下因为权限问题会遇见坑，因为pkg安装时默认是以root身份安装，造成接下来的<code>npm install</code>命令都需要加上sudo，并且会遇到没权限的问题。</p>
+<p>常规安装的另外一个弱点是无法对nodejs进行版本管理，更新也要卸载后重装，并且可能因为nodejs版本造成包的兼容性问题。</p>
+<h2 id="优雅安装">优雅安装</h2><p>优雅安装有两种方式，<code>n</code>和<code>nvm</code>，都支持同时安装多个版本的nodejs，并可以在不同的项目目录随意切换nodejs版本。两者差别不大，我选择了后者。</p>
+<h2 id="安装NVM&amp;NodeJS">安装NVM&amp;NodeJS</h2><p>NVM的安装教程在github上有非常详细的说明，我就不做搬运工了。安装时可能会有类似缺少~/.bash_profile, ~/.zshrc or ~/.profile文件之类的错误提示，只要在用户目录下随便新建其中之一就可以了。</p>
+<h2 id="使用">使用</h2><p>安装完NodeJS后，在项目目录运行nvm use 0.12.2即可，0.12.2代表要使用的nodejs版本</p>
+<h2 id="相关链接">相关链接</h2><ul>
+<li><a href="https://github.com/creationix/nvm" target="_blank" rel="external">https://github.com/creationix/nvm</a></li>
+<li><a href="http://npm.taobao.org/" target="_blank" rel="external">http://npm.taobao.org/</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+  </div>
+</div>
+
+  
+    <div class="article row">
+  <div class="col-md-10 col-md-offset-1">
+    
+      
+  
+    <h1 class="article-title text-center">
       <a class="" href="/visibilitychange-event/">关于visibilitychange事件的一点理解</a>
     </h1>
   

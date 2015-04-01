@@ -98,55 +98,6 @@
 </div>
 
   
-    <div class="article row">
-  <div class="col-md-10 col-md-offset-1">
-    
-      
-  
-    <h1 class="article-title text-center">
-      <a class="" href="/visibilitychange-event/">关于visibilitychange事件的一点理解</a>
-    </h1>
-  
-
-
-    
-    <div class="well well-sm text-center">
-        <span class="btn btn-xs btn-default">2015/03/31
-</span>
-        
-  <a class="btn btn-xs btn-primary tag-link" href="/tags/javascript/">javascript</a>, <a class="btn btn-xs btn-primary tag-link" href="/tags/技术学习/">技术学习</a>
-
-
-        
-    </div>
-    
-    <div class="article-body">
-      
-        <h2 id="何为visibilitychange事件">何为visibilitychange事件</h2><p>从字面即可很简单的理解到这个事件是在改变可视状态的时候触发，具体来说是在浏览器TAB页切换时触发，经过测试，并不能在最小化浏览器时触发。</p>
-<blockquote>
-<p>iframe页面可见性与父页面相同，所以通过css显示或隐藏iframe时并不会触发其visibilitychange事件</p>
-</blockquote>
-<h2 id="使用方法">使用方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">document</span>.addEventListener(<span class="string">"visibilitychange"</span>, <span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log((<span class="keyword">new</span> <span class="built_in">Date</span>()));</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h2 id="浏览器兼容性">浏览器兼容性</h2><p>目前主流的标准浏览器基本都已经支持，部门旧版浏览器需要增加内核前缀，IE从10开始支持。</p>
-<h2 id="常见应用场景">常见应用场景</h2><ul>
-<li>幻灯片播放时可在不可见时停止播放，恢复显示后继续播放</li>
-<li>每隔一段时间向服务器请求数据的可在切换可见性时停止，减轻服务器负担</li>
-<li>网站访问统计提供跟准确的数据</li>
-<li>网站title根据可见性变换</li>
-</ul>
-<h2 id="参考资料">参考资料</h2><ul>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Events/visibilitychange" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/Events/visibilitychange</a></li>
-<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/User_experience/Using_the_Page_Visibility_API" target="_blank" rel="external">https://developer.mozilla.org/en-US/docs/Web/Guide/User_experience/Using_the_Page_Visibility_API</a></li>
-</ul>
-
-      
-    </div>
-    
-    
-  </div>
-</div>
-
-  
   
 
   </div>
