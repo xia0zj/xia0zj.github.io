@@ -10,9 +10,11 @@
         <a href="<%- post.permalink %>#disqus_thread" class="article-comment-link">Comments</a>
         <% } %>
     </div>
+    <% if (post.banner){ %>
     <div class="article-banner text-center">
       <img src="<%- post.banner %>" alt="<%- post.title %>" class="img-responsive center-block">
     </div>
+    <% } %>
     <div class="article-body">
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
